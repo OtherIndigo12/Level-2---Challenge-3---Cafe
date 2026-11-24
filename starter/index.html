@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+
+  <!-- Fonts (already set up for you) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Tailwind (already set up for you) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // This lets you use the classes `font-sans` (Inter Tight) and `font-serif` (Instrument Serif)
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Inter Tight"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<!-- TODO: give the body a background color, text color and font -->
+<body class="text-base bg-stone-100">
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <!-- TODO: address, hours and phone go here (from the API) -->
+    <div id="restaurant-info" class="flex items-center justify-between gap-8 w-full px-8 py-4 text-stone-500 md:text-sm text-sm">
+      <p id="room"></p>
+      <p id="date"></p>
+      <p id="phone"></p>
+    </div>
+
+    <!-- TODO: the restaurant name — make it HUGE -->
+    <h1 id="restaurant-name" class="text-stone-900 md:text-9xl text-6xl ml-10 font-sans font-black"></h1>
+
+    <!-- TODO: the tagline — italic serif, accent color -->
+    <p id="tagline" class="text-orange-700 ml-7 font-serif italic md:text-4xl text-3xl font-semibold mt-5 mb-10"></p>
+  </header>
+
+  <!-- ===== CATEGORY NAV ===== -->
+  <!-- TODO: make the nav stick to the top of the screen when you scroll -->
+  <nav>
+    <!-- One link per category goes in here (from the API) -->
+    <hr class="border-stone-900">
+    <ul id="category-nav" class="flex justify-start items-center gap-8 mt-3 mb-3 ml-7 mr-7">
+      <a href="#boot-up" id="boot-up-nav" class="font-black border border-stone-900 rounded-xl pt-1 pb-1 pl-2 pr-2"></a>
+      <a href="#main-functions" id="main-functions-nav" class=" font-black border border-stone-900 rounded-xl pt-1 pb-1 pl-2 pr-2"></a>
+      <a href="#sweet-syntax" id="sweet-syntax-nav" class="font-black border border-stone-900 rounded-xl pt-1 pb-1 pl-2 pr-2"></a>
+      <a href="#fuel" id="fuel-nav" class="font-black border border-stone-900 rounded-xl pt-1 pb-1 pl-2 pr-2"></a>
+    </ul>
+    <hr class="border-stone-500">
+  </nav>
+
+  <!-- ===== MENU ===== -->
+  <!-- One <section> per category goes in here (from the API) -->
+  <main id="menu">
+
+    <div class="flex justify-between pt-10">
+      <p id="boot-up" class="ml-7 text-6xl font-sans font-black"></p>
+      <p id="Id-1" class="mr-7 text-orange-700 text-3xl font-serif italic"></p>
+    </div>
+    
+
+    
+    <section class="grid md:grid-cols-3 grid-cols-1 mx-auto max-w-4xl gap-8 mt-10 mb-10 text-stone-900 ">
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="fries-img" class="w-[350px] h-[250px]">
+        <div class=" flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="fries" class="font-black"></p>
+          <p id="price1" class="text-orange-700"></p>
+        </div>
+        <p id="desc1" class="text-sm text-stone-500"></p>
+        <p id="tag1" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+      
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="bites-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="bug-bites" class="font-black"></p>
+          <p id="price2" class="text-orange-700"></p>
+        </div>
+        <p id="desc2" class="text-sm text-stone-500"></p>
+        <p id="tag2" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+      
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="nachos-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="nachos" class="font-black"></p>
+          <p id="price3" class="text-orange-700"></p>
+        </div>
+        <p id="desc3" class="text-sm text-stone-500"></p>
+        <p id="tag3" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+    </section>
+  
+    <hr class="border-stone-300">
+
+    
+    <div class="flex justify-between pt-10">
+      <p id="main-functions" class="ml-7 text-6xl font-sans font-black"></p>
+      <p id="Id-2" class="mr-7 text-orange-700 text-3xl font-serif italic"></p>
+    </div>
+
+    
+    <section class="grid md:grid-cols-3 grid-cols-1 mx-auto max-w-4xl gap-8 mt-10 mb-10 text-stone-900">
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="burger-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="burger" class="font-black"></p>
+          <p id="price4" class="text-orange-700"></p>
+        </div>
+        <p id="desc4" class="text-sm text-stone-500 md:ml-0 md:mr-0 mr-7 ml-7"></p>
+        <p id="tag4" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+      
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="ramen-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="ramen" class="font-black"></p>
+          <p id="price5" class="text-orange-700"></p>
+        </div>
+        <p id="desc5" class="text-sm text-stone-500"></p>
+        <p id="tag5" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+      
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="bowl-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="bowl" class="font-black"></p>
+          <p id="price6" class="text-orange-700"></p>
+        </div>
+        <p id="desc6" class="text-sm text-stone-500 md:ml-0 md:mr-0 mr-7 ml-7"></p>
+        <p id="tag6" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="pi-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="pi" class="font-black"></p>
+          <p id="price7" class="text-orange-700"></p>
+        </div>
+        <p id="desc7" class="text-sm text-stone-500 md:ml-0 md:mr-0 mr-7 ml-7"></p>
+        <p id="tag7" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+
+    </section>
+  
+    <hr class="border-stone-300">
+
+    
+    <div class="flex justify-between pt-10">
+      <p id="sweet-syntax" class="ml-7 text-6xl font-sans font-black"></p>
+      <p id="Id-3" class="mr-7 text-orange-700 text-3xl font-serif italic"></p>
+    </div>
+
+    <section class="grid md:grid-cols-3 grid-cols-1 mx-auto max-w-4xl gap-8 mt-10 mb-10 text-stone-900">
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="cookie-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="cookie" class="font-black"></p>
+          <p id="price8" class="text-orange-700"></p>
+        </div>
+        <p id="desc8" class="text-sm text-stone-500 md:ml-0 md:mr-0 mr-7 ml-7"></p>
+        <p id="tag8" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+      
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="pancakes-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="pancakes" class="font-black"></p>
+          <p id="price9" class="text-orange-700"></p>
+        </div>
+        <p id="desc9" class="text-sm text-stone-500"></p>
+        <p id="tag9" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+    
+      
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="loops-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="loops" class="font-black"></p>
+          <p id="price10" class="text-orange-700"></p>
+        </div>
+        <p id="desc10" class="text-sm text-stone-500"></p>
+        <p id="tag10" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+
+    </section>
+  
+    <hr class="border-stone-300">
+
+    
+    
+    <div class="flex justify-between pt-10">
+      <p id="fuel" class="ml-7 text-6xl font-sans font-black"></p>
+      <p id="Id-4" class="mr-7 text-orange-700 text-3xl font-serif italic"></p>
+    </div>
+
+    <section class="grid md:grid-cols-3 grid-cols-1 mx-auto max-w-4xl gap-8 mt-10 mb-10 text-stone-900">
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="java-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="java" class="font-black"></p>
+          <p id="price11" class="text-orange-700"></p>
+        </div>
+        <p id="desc11" class="text-sm text-stone-500"></p>
+        <p id="tag11" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+      
+      <article class="flex flex-col md:items-start items-center md:justify-start justify-center">
+        <img id="bubble-img" class="w-[350px] h-[250px]">
+        <div class="flex justify-between items-center mt-3 w-full max-w-[350px]">
+          <p id="bubble" class="font-black"></p>
+          <p id="price12" class="text-orange-700"></p>
+        </div>
+        <p id="desc12" class="text-sm text-stone-500"></p>
+        <p id="tag12" class="text-sm border-1 border-stone-900 bg-stone-300 w-fit rounded-xl mt-3 pt-1 pb-1 pl-2 pr-2"></p>
+      </article>
+
+    </section>
+
+    <p id="status" class="text-center m-6">Loading the menu…</p>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-stone-900 text-stone-500 pl-6 pt-7 pb-8 ">
+    <p id="footer-name" class="md:text-4xl text-3xl font-sans font-black text-stone-100"></p>
+    <p id="footer-info" class="text-sm"></p>
+  </footer>
+
+  <script type="module" src="/api/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+{
+  "restaurant": {
+    "id": 1,
+    "name": "CodeStack Café",
+    "tagline": "fuel for your next commit",
+    "address": "Room 101 · Main Campus",
+    "hours": "Mon–Fri · 8am–5pm",
+    "phone": "(555) 010-1010"
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "Boot Up"
+    },
+    {
+      "id": 2,
+      "name": "Main Functions"
+    },
+    {
+      "id": 3,
+      "name": "Sweet Syntax"
+    },
+    {
+      "id": 4,
+      "name": "Fuel"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "Hello World Fries",
+      "category_id": 1,
+      "price": 5,
+      "description": "Everyone's first order. Crispy fries, sea salt, garlic aioli.",
+      "tag": "vegetarian"
+    },
+    {
+      "id": 2,
+      "name": "Bug Bites",
+      "category_id": 1,
+      "price": 8,
+      "description": "Crispy popcorn chicken you'll want to squash. Hot honey drizzle.",
+      "tag": "spicy"
+    },
+    {
+      "id": 3,
+      "name": "Array of Nachos",
+      "category_id": 1,
+      "price": 9,
+      "description": "Every index filled: cheese, jalapeños, pico de gallo, crema.",
+      "tag": "spicy"
+    },
+    {
+      "id": 4,
+      "name": "Full-Stack Burger",
+      "category_id": 2,
+      "price": 14,
+      "description": "Front end to back end: brioche, two patties, cheddar, lettuce, tomato, stack sauce.",
+      "tag": "popular"
+    },
+    {
+      "id": 5,
+      "name": "Recursive Ramen",
+      "category_id": 2,
+      "price": 13,
+      "description": "Keeps calling you back. Rich broth, soft egg, scallions, nori.",
+      "tag": "new"
+    },
+    {
+      "id": 6,
+      "name": "Boolean Bowl",
+      "category_id": 2,
+      "price": 12,
+      "description": "Healthy? true. Quinoa, roasted sweet potato, chickpeas, avocado, tahini.",
+      "tag": "vegan"
+    },
+    {
+      "id": 7,
+      "name": "Pepperoni Pi",
+      "category_id": 2,
+      "price": 15,
+      "description": "3.14 slices of wood-fired pepperoni pizza, rounded up to a whole pie.",
+      "tag": "popular"
+    },
+    {
+      "id": 8,
+      "name": "Cookie Session",
+      "category_id": 3,
+      "price": 4,
+      "description": "Stored on a plate, not in your browser. Warm chocolate chip cookies.",
+      "tag": "vegetarian"
+    },
+    {
+      "id": 9,
+      "name": "Stack Overflow Pancakes",
+      "category_id": 3,
+      "price": 10,
+      "description": "So many pancakes it overflows. Maple syrup, butter, fresh berries.",
+      "tag": "vegetarian"
+    },
+    {
+      "id": 10,
+      "name": "Infinite Loops",
+      "category_id": 3,
+      "price": 6,
+      "description": "Glazed mini donuts. Once you start, you can't break out.",
+      "tag": "vegetarian"
+    },
+    {
+      "id": 11,
+      "name": "Java",
+      "category_id": 4,
+      "price": 3,
+      "description": "The original. Hot drip coffee, unlimited refills.",
+      "tag": "vegan"
+    },
+    {
+      "id": 12,
+      "name": "Bubble Sort Boba",
+      "category_id": 4,
+      "price": 6,
+      "description": "Brown sugar milk tea with boba pearls, sorted by hand.",
+      "tag": "vegetarian"
+    }
+  ]
+}
